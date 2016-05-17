@@ -5,5 +5,7 @@
 
 target 'LoginScreen' do
 
+pod 'TPKeyboardAvoiding', '~> 1.3'
+
 end
 
