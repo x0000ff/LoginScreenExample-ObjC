@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNz-fp-vIO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLg-mT-X0U" userLabel="Scroll Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Oa-O0-W5B">
+                                                <rect key="frame" x="180" y="232" width="240" height="136"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0R5-9s-4CV" customClass="XTextField">
+                                                        <rect key="frame" x="8" y="8" width="224" height="30"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nO6-Fu-ANm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUl-Kq-x33" customClass="XTextField">
+                                                        <rect key="frame" x="8" y="46" width="224" height="30"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="DLL-aE-wGx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLZ-m3-BFa">
+                                                        <rect key="frame" x="8" y="84" width="224" height="44"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40626457555970147" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="dW3-hC-tns"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Login"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.21070429104477612" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="CLZ-m3-BFa" secondAttribute="bottom" constant="8" id="6vc-ax-Tja"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CLZ-m3-BFa" secondAttribute="trailing" constant="8" id="EVn-e5-HxH"/>
+                                                    <constraint firstItem="BUl-Kq-x33" firstAttribute="top" secondItem="0R5-9s-4CV" secondAttribute="bottom" constant="8" id="JOh-sl-8cn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0R5-9s-4CV" secondAttribute="trailing" constant="8" id="Ksl-Ee-dYt"/>
+                                                    <constraint firstItem="CLZ-m3-BFa" firstAttribute="top" secondItem="BUl-Kq-x33" secondAttribute="bottom" constant="8" id="Op6-XN-Ugh"/>
+                                                    <constraint firstItem="0R5-9s-4CV" firstAttribute="leading" secondItem="2Oa-O0-W5B" secondAttribute="leading" constant="8" id="Rpm-a2-jHa"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="YtG-6u-0wP"/>
+                                                    <constraint firstItem="BUl-Kq-x33" firstAttribute="leading" secondItem="2Oa-O0-W5B" secondAttribute="leading" constant="8" id="b1T-KW-7ZR"/>
+                                                    <constraint firstItem="CLZ-m3-BFa" firstAttribute="leading" secondItem="2Oa-O0-W5B" secondAttribute="leading" constant="8" id="fiw-UX-1Us"/>
+                                                    <constraint firstItem="0R5-9s-4CV" firstAttribute="top" secondItem="2Oa-O0-W5B" secondAttribute="top" constant="8" id="g7K-oH-9Fi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BUl-Kq-x33" secondAttribute="trailing" constant="8" id="j9N-Qa-4jm"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="2Oa-O0-W5B" firstAttribute="centerY" secondItem="hLg-mT-X0U" secondAttribute="centerY" id="UXx-yL-c9a"/>
+                                            <constraint firstItem="2Oa-O0-W5B" firstAttribute="centerX" secondItem="hLg-mT-X0U" secondAttribute="centerX" id="jpE-B0-PyJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hLg-mT-X0U" secondAttribute="trailing" id="4Yc-Fl-VIW"/>
+                                    <constraint firstAttribute="bottom" secondItem="hLg-mT-X0U" secondAttribute="bottom" id="Bsn-YN-pen"/>
+                                    <constraint firstItem="hLg-mT-X0U" firstAttribute="top" secondItem="cNz-fp-vIO" secondAttribute="top" id="EYD-Is-nTt"/>
+                                    <constraint firstItem="hLg-mT-X0U" firstAttribute="leading" secondItem="cNz-fp-vIO" secondAttribute="leading" id="mTy-a1-0yO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.438645495" green="0.81263809970000001" blue="0.56500770229999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cNz-fp-vIO" secondAttribute="bottom" id="7DX-64-YWU"/>
+                            <constraint firstItem="hLg-mT-X0U" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="249" id="9Dl-ip-6pt"/>
+                            <constraint firstAttribute="trailing" secondItem="cNz-fp-vIO" secondAttribute="trailing" id="AcX-51-kuK"/>
+                            <constraint firstItem="hLg-mT-X0U" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Kb1-9R-Xta"/>
+                            <constraint firstItem="cNz-fp-vIO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZSG-6l-y56"/>
+                            <constraint firstItem="cNz-fp-vIO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="rnS-RC-Sbd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="0R5-9s-4CV" id="fLz-DW-SiI"/>
+                        <outlet property="passwordTF" destination="BUl-Kq-x33" id="1rD-Jb-xTh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="375"/>
+        </scene>
+    </scenes>
+</document>
